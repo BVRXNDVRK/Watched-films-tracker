@@ -238,3 +238,34 @@ showMyDB(personalMovieDB.privat);
 // }
 
 // writeYourGenres();
+
+/* РЕШИЛ ПОПЫТАТЬСЯ НАПИСАТЬ СВОЙ МЕТОД Object.keys() И ВОТ ЧТО ПОЛУЧИЛОСЬ ( Получилось! )*/
+// const tatata = {
+//   name: "kavo",
+//   surname: "gde",
+//   age: 18,
+//   hobbies: {
+//     programming: "1",
+//     running: "2"
+//   }
+// };
+
+// function keysArr (anyObject) {
+//   let counter = 0;
+//   let optionsArr = [];
+
+//   for ( let key in anyObject ) {
+//     counter++;
+
+//     for ( let i = 0; i < counter; i++ ) {
+//       if ( i == optionsArr.length ) {
+//         optionsArr[i] = `${key}`;
+//       }
+//     }
+//   }
+//   return optionsArr;
+// }
+
+// keysArr(tatata);
+
+// console.log(keysArr(tatata).length);
