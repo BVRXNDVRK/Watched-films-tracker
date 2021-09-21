@@ -16,10 +16,10 @@ const personalMovieDB = {
       personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
     }
   },
-  rememberMyFilms: function() {
+  rememberMyFilms: function () {
     for (let i = 0; i < 2; i++) {
       const lastWatchedFilm = prompt('Один из последних просмотренных фильмов?'),
-            filmRaiting = +prompt('Во сколько вы оцените его (от 1 до 10)?');
+        filmRaiting = +prompt('Во сколько вы оцените его (от 1 до 10)?');
 
       if (lastWatchedFilm != null && filmRaiting != null && lastWatchedFilm != '' && filmRaiting != '' && lastWatchedFilm.length < 50) {
         personalMovieDB.movies[lastWatchedFilm] = filmRaiting;
@@ -29,7 +29,7 @@ const personalMovieDB = {
       }
     }
   },
-  detectPersonalLevel: function() {
+  detectPersonalLevel: function () {
     switch (true) {
       case (personalMovieDB.count < 10):
         alert('Просмотрено довольно мало фильмов...');
@@ -42,19 +42,19 @@ const personalMovieDB = {
         break;
     }
   },
-  showMyDB: function(hidden) {
+  showMyDB: function (hidden) {
     if (!hidden) {
       console.log(personalMovieDB);
     }
   },
-  toggleVisibleMyDB: function() {
+  toggleVisibleMyDB: function () {
     if (personalMovieDB.privat) {
       personalMovieDB.privat = false;
     } else {
       personalMovieDB.privat = true;
     }
   },
-  writeYourGenres: function() {
+  writeYourGenres: function () {
     for (let i = 1; i < 2; i++) {
       // let genre = prompt(`Ваш любимый жанр под номером ${i}`);
 
@@ -68,12 +68,12 @@ const personalMovieDB = {
       let genres = prompt(`Введите ваши любимые жанры через запятую`).toLowerCase();
 
       if (genres == '' || genres == null) {
-          alert('Вы ввели некорректные данные или не ввели их вовсе');
-          i--;
-        } else {
+        alert('Вы ввели некорректные данные или не ввели их вовсе');
+        i--;
+      } else {
         personalMovieDB.genres = genres.split(', ');
         personalMovieDB.genres.sort();
-        }
+      }
     }
 
     personalMovieDB.genres.forEach((item, i) => {
@@ -81,15 +81,6 @@ const personalMovieDB = {
     });
   }
 };
-
-// ВЫЗОВЫ ФУНКЦИЙ
-// start();
-// detectPersonalLevel();
-// rememberMyFilms();
-// writeYourGenres();
-// showMyDB(personalMovieDB.privat);
-
-
 
 /* ПРАКТИКА ЧАСТЬ 2 -- САМОСТОЯТЕЛЬНАЯ РАБОТА */
 
