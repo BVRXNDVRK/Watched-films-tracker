@@ -28,7 +28,7 @@ for (let i = 0; i < advsCount; i++) {
 const promoGenre = document.querySelector('.promo__genre');
 promoGenre.textContent = 'ДРАМА';
 
-// ТРЕТЕЕ ЗАДАНИЕ
+// ТРЕТЬЕ ЗАДАНИЕ
 const promoBG = document.querySelector('.promo__bg');
 promoBG.style.background = 'url(../img/bg.jpg) center/cover no-repeat';
 
